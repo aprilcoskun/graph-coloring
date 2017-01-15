@@ -83,8 +83,6 @@ void colorIt(Graf g) {
 
 				if(g.adj[e][t] &&g.colors[t]==g.colors[biggest]) problem = true;
 
-					//coloring which doesn't have path with which doesn't have path with biggest one
-
 					if (t == x - 1 && !problem) {
 						g.colors[e] = colors[counter];
 						std::cout << g.vertex_id[e] <<":color "<< g.colors[e] << std::endl;
